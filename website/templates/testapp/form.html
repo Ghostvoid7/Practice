@@ -1,0 +1,26 @@
+{% extends 'testapp/base.html' %}
+
+{% block content %}
+    <h1>Add new post</h1>
+    <form action="save" method="post">
+        {% csrf_token %}
+        <p>Title* <input type="text" required name="title"></p>
+        <p>Description: <textarea rows="10" cols="20" name="description"></textarea></p>
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
